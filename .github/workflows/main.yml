@@ -9,6 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       -
+         run: echo ${{ secrets.DOCKERHUB_USERNAME }} ${{ secrets.DOCKERHUB_TOKEN }}
+      -
         name: Checkout
         uses: actions/checkout@v3
       -
